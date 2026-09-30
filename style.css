@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root{
+    --burgundy:#6B3F45;
+    --burgundy-dark:#563137;
+    --cream:#F8F5F1;
+    --charcoal:#2B2521;
+    --soft:#EFE9E2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--charcoal);
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+h1,h2,h3{
+    font-family:'Cormorant Garamond',serif;
+}
+
+/* ========================
+NAVIGATION
+======================== */
+
+nav{
+    padding:30px 0;
+    background:var(--cream);
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    color:var(--burgundy);
+    font-size:60px;
+}
+
+.logo span{
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.menu{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.menu a{
+    text-decoration:none;
+    color:var(--charcoal);
+}
+
+.button{
+    background:none;
+    color:antiquewhite;
+    text-decoration:none;
+    padding:15px 25px;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+/* ========================
+HERO
+======================== */
+
+.hero{
+    padding:80px 0;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-text h2{
+    font-size:80px;
+    color:var(--burgundy);
+    line-height:.9;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.hero-image img{
+    width:100%;
+    height:750px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+/* ========================
+INTRO
+======================== */
+
+.intro{
+    background:white;
+    padding:100px 50px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:60px;
+    color:var(--burgundy);
+    max-width:900px;
+    margin:auto;
+}
+
+.process{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+    font-size:28px;
+}
+
+/* ========================
+WOMEN
+======================== */
+
+.women{
+    padding:100px 0;
+}
+
+.section-title{
+    color:var(--burgundy);
+    font-size:60px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+}
+
+.card img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:var(--burgundy);
+    font-size:40px;
+    padding:20px 20px 0;
+}
+
+.card p{
+    padding:10px 20px 25px;
+}
+
+/* ========================
+STORY
+======================== */
+
+.story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:white;
+}
+
+.story-content{
+    padding:100px;
+}
+
+.story-content h2{
+    font-size:60px;
+    color:var(--burgundy);
+    margin:20px 0;
+}
+
+.story-image img{
+    width:100%;
+    height:700px;
+    object-fit:cover;
+}
+
+/* ========================
+QUESTIONS
+======================== */
+
+.questions{
+    padding:100px 0;
+}
+
+.question-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.question-box{
+    background:white;
+    padding:30px;
+}
+
+.question-box h3{
+    color:var(--burgundy);
+    margin-bottom:15px;
+}
+
+/* ========================
+GUIDANCE
+======================== */
+
+.guidance{
+    padding:100px 0;
+    background:var(--soft);
+}
+
+.guidance-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.panel{
+    background:white;
+    padding:40px;
+}
+
+.panel h2{
+    color:var(--burgundy);
+    margin-bottom:15px;
+}
+
+/* ========================
+CTA
+======================== */
+
+.cta{
+    padding:120px 50px;
+
+    background:
+    linear-gradient(
+        rgba(107,63,69,.9),
+        rgba(107,63,69,.9)
+    ),
+    url("images/cta-background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.cta h2{
+    font-size:60px;
+    max-width:800px;
+    margin-bottom:30px;
+}
+
+/* ========================
+FOOTER
+======================== */
+
+footer{
+    background:var(--charcoal);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* ========================
+MOBILE
+======================== */
+
+@media(max-width:900px){
+
+.hero-grid,
+.story,
+.cards,
+.guidance-grid,
+.question-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-text h2{
+    font-size:50px;
+}
+
+.intro h2,
+.section-title,
+.story-content h2,
+.cta h2{
+    font-size:40px;
+}
+
+.menu{
+    display:none;
+}
+}
