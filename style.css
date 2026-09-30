@@ -114,8 +114,12 @@ HERO
     height:750px;
     object-fit:cover;
     border-radius:6px;
+    
 }
-
+.hero-image{
+    display:block;
+    width:100%;
+}
 /* ========================
 INTRO
 ======================== */
