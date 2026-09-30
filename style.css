@@ -301,103 +301,46 @@ footer{
 MOBILE
 ======================== */
 
-@media(max-width:900px){
+@media (max-width: 768px) {
 
-.hero-grid,
-.story,
-.cards,
-.guidance-grid,
-.question-grid{
-    display:grid;
-    grid-template-columns:1fr;
-}
+    .menu{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
 
-.container{
-    width:92%;
-}
+    .hero-grid{
+        display:grid;
+        grid-template-columns:1fr;
+    }
 
-.hero{
-    padding:40px 0;
-}
+    .hero-text{
+        text-align:center;
+    }
 
-.hero-text{
-    text-align:center;
-}
+    .hero-text h2{
+        font-size:42px;
+    }
 
-.hero-text h2{
-    font-size:42px;
-    line-height:1;
-}
+    .hero-image img{
+        height:auto;
+    }
 
-.hero-text p{
-    font-size:18px;
-}
+    .section-title{
+        font-size:36px;
+        text-align:center;
+    }
 
-.hero-image img{
-    height:450px;
-    margin-top:20px;
-}
+    .cards{
+        grid-template-columns:1fr;
+    }
 
-.intro{
-    padding:60px 20px;
-}
+    .story{
+        grid-template-columns:1fr;
+    }
 
-.intro h2{
-    font-size:32px;
-}
-
-.process{
-    flex-wrap:wrap;
-    gap:10px;
-    font-size:22px;
-}
-
-.section-title{
-    font-size:36px;
-    text-align:center;
-}
-
-.card img{
-    height:350px;
-}
-
-.card h3{
-    font-size:32px;
-}
-
-.story-content{
-    padding:40px 25px;
-}
-
-.story-content h2{
-    font-size:34px;
-}
-
-.story-image img{
-    height:450px;
-}
-
-.panel{
-    padding:25px;
-}
-
-.cta{
-    padding:60px 25px;
-}
-
-.cta h2{
-    font-size:34px;
-}
-
-.menu{
-    display:none;
-}
-
-.logo h1{
-    font-size:46px;
-}
-
-.logo span{
-    font-size:10px;
-}
+    .story-content{
+        padding:30px;
+    }
 }
